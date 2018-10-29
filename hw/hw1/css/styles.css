@@ -1,0 +1,108 @@
+body {
+	background-color:#819595;
+	color:black;
+}
+
+header, main, nav, footer {
+	text-align: center;
+}
+
+nav a{	/*links within "nav" container */
+	padding-left:8px;
+	padding-right:8px;
+	font-size: 1.8em;
+	text-decoration: none;	/* remoces underline */
+	color: #363946;			/* by default links are blue */
+	
+	
+}
+
+#source{
+	text-decoration:none;
+	color: #896389;
+}
+
+nav a:hover {
+	color:#896389;
+	transition: .4s;
+	background: #363946;	
+}
+
+nav{
+	background: #896389;
+	width: 50%;
+	margin: auto;
+}
+
+
+h1{
+	font-size: 4em;
+	margin-bottom: 0px;
+}
+
+#summary{
+	margin:auto;
+	margin-bottom: 30px;
+	font-size: 1.2em;
+	padding: 30px;
+	width: 75%;
+	background:#B1B6A6;
+	color: #363946;
+	text-align: left;
+}
+
+#description{
+	margin:auto;
+	margin-bottom: 30px;
+	font-size: 1.2em;
+	padding: 30px;
+	width: 75%;
+	background:#B1B6A6;
+	color: #363946;
+	text-align: left;
+}
+
+h2{
+	text-align: center;
+	padding: 15px;
+}
+
+#currentPage{
+	color:#896389;
+	background: #363946;
+}
+table,td{
+	border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+	margin-top: 40px;
+	background:#B1B6A6;
+}
+
+td{
+	padding: 15px;
+}
+#animation, table{
+	float: left;
+	
+}
+
+#animation{
+	margin-left:21%;
+}
+
+#description{
+	clear:left;
+}
+
+#tableheader{
+	font-weight:bold;
+}
+
+caption{
+	font-size: 1.3em;
+	font-weight: bold;
+}
+

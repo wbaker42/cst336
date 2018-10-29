@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Quick Sort</title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    </head>
+	
+    <body>
+        
+        <header>
+			<h1> Quick Sort </h1>
+		</header>
+		<br>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="insertion.html">Insertion Sort</a>
+			<a href="bubble.html">Bubble Sort</a>
+			<a href="quick.html" id="currentPage">Quick Sort</a>
+		</nav>
+		
+		<br /><br />
+		
+		<main>
+			<figure id="animation">
+				<img src="images/quick.gif" alt="Quick Sort Animation"/>
+			</figure>
+			<table>
+				<caption>Bubble Sort</caption>
+				<tr id = "tableheader">
+					<td>Type</td>
+					<td>Stability</td>
+					<td>Best Case</td>
+					<td>Worst Case</td>
+					<td>Average Case</td>
+					
+				</tr>
+				<tr>
+					<td>Divide and Conquer</td>
+					<td>Unstable</td>
+					<td>O(nlogn)</td>
+					<td>O(n^2)</td>
+					<td>O(nlogn)</td>
+				</tr>
+			</table>
+			<div id="description">
+				<p><a href= "https://brilliant.org/wiki/quick-sort/" id ="source">Quick sort</a> is one of the most important sorting algorithms. This algorithm employs a divide and conquer strategy. It randomly selects a pivot point. It then
+				compares pairs of elements on either side of the pivot and then swaps them if the one on the left is greater than the pivot and the one on the right is less than
+				the pivot. This ensures that every the pivot is in the correct position. This algorithm has the potential to be extremely inefficient at O(n^2) however this only 
+				occurs if the selected pivot is the max or min in the array. As the best and average case, it is O(nlogn). This is of course less efficient than the O(n) possible
+				with both bubble and insertion sort. However since the average case is more efficient, it is generally a much more efficient algorithm. It is often implemented
+				as an unstable sort.</p>
+			</div>
+			</main>
+        
+    </body>
+
+</html>
