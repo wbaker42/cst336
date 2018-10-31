@@ -20,7 +20,7 @@
             switch($randomValue1){
                 case 0: $totalPoints = 1000;
                         echo "<h1>Jackpot!</h1>";
-                        echo "<audio autoplay> <source src='sounds/jackpot.mp3' type='audio/mp3'</audio>";
+                        echo "<audio autoplay> <source src='sounds/jackpot.mp3' type='audio/mp3'></audio>";
                         break;
                 case 1: $totalPoints = 500;
                         break;
@@ -33,14 +33,14 @@
             
         } else {
             echo "<h3> Try Again! </h3>";
-            echo "<audio autoplay> <source src='sounds/lose.mp3' type='audio/mp3'</audio>";
+            echo "<audio autoplay> <source src='sounds/lose.mp3' type='audio/mp3'></audio>";
         }
         echo "</div>";
     }
     
     function play() {
         for ($i=1; $i<4; $i++){
-            ${"randomValue" . $i } = rand(0,3);
+            ${"randomValue" . $i } = 0;//rand(0,3);
             displaySymbol(${"randomValue" . $i}, $i);
         }
         displayPoints($randomValue1, $randomValue2, $randomValue3);
