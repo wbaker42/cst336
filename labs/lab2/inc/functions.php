@@ -11,7 +11,7 @@
             case 3: $symbol = "grapes";
         }
         
-        echo "<img id='reel$reelNum' src='img/$symbol.png' alt='$symbol' title='". ucfirst($symbol). "' width='70' >";
+        echo "<img id='reel$reelNum' src='img/$symbol.PNG' alt='$symbol' title='". ucfirst($symbol). "' width='70' >";
     }
     
     function displayPoints($randomValue1, $randomValue2, $randomValue3){
