@@ -1,0 +1,25 @@
+    body{
+        opacity:0.9;
+        width:100%;
+        text-align:center;
+        color:yellow;
+    }
+    
+    input {
+        font-size: 3em;
+        color: black;
+        border-radius: 4px;
+    }
+    #test{
+        font-size: 3em;
+        color: black;
+        background-color: gray;
+        width: 50%;
+        margin: auto;
+        opacity:0.8;
+        border-radius: 6px;
+    }
+    #carousel-example-generic {
+         margin: 0 auto;   
+         width: 700px;
+    }
