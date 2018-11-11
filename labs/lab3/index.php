@@ -98,10 +98,10 @@
             <input type="submit" value="Submit" />
             <br><br>
             <div id="test"><input type = "radio" id = "lhorizontal" name = "layout" value = "horizontal">
-            <label for = "Horizontal"></label><label for "lhorizontal"> Test </label>
+            <label for = "Horizontal"></label><label for "lhorizontal"> Horizontal </label>
             
             <input type = "radio" id = "lvertical" name = "layout" value = "vertical">
-            <label id="lab" for = "Vertical"></label><label for "lhorizontal"> Vertical </label>
+            <label id="lab" for = "Vertical"></label><label for "lvertical"> Vertical </label>
             <select name="category" >
                  <option value="">- Select -</option>
                  <option > Frog </option>

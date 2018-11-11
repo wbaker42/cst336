@@ -1,0 +1,151 @@
+body {
+	background-color:#EDF1F4;
+	color:black;
+}
+h1{
+    margin-left: 12.5%;
+    color: #EDF1F4;
+    background-color: #00A7E1;
+    padding:10px;
+    width: 30%;
+    border-radius: 5px;
+    text-align: center;
+}
+.oddQuestion{
+    background-color: #8D99AE;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.evenQuestion{
+    background-color: #C4CAD0;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+#errors{
+    font-size: 1.8em;
+    background-color: yellow;
+    color:red;
+    font-weight: bold;
+    width: 67%;
+    padding: 10px;
+    border-radius: 5px;
+    margin: auto;
+    text-align: center;
+}
+
+input[type=submit] {
+    width: 92%;
+    background-color: #3F88C5;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 4px;
+    margin-left: 4%;
+}
+
+input[type=submit]:hover {
+    background-color: #3778AD;
+}
+
+#main{
+    width:75%;
+    margin:auto;
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 5px;
+}
+#scoreInfo{
+    width:50%;
+    margin: auto;
+    background-color: #00A7E1;
+    padding: 10px;
+    border-radius: 10px
+}
+h2{
+    color:#8D99AE;
+}
+#stats{
+    width:90%;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px
+}
+
+#response{
+    width:50%;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    color:#8D99AE;
+}
+
+#topInput{
+    background-color: #00A7E1;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+#name{
+    background-color: #C4CAD0;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1.8em;
+    width: 40%;
+}
+
+#level{
+    background-color: white;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1.8em;
+    width: 40%;
+    margin-left: 7%;
+}
+nav{
+    width: 5%;
+    background-color: white;
+    font-size: 1.4em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-radius: 4px
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav:hover {
+	color:black;
+	transition: .4s;
+	background: #3F88C5;	
+}
+.question{
+    color:black;
+    text-align: center;
+}
+
+#score{
+    color: red;
+    font-weight: bold;
+}

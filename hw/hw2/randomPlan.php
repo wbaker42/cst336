@@ -4,13 +4,13 @@
         <link href="css/styles.css" rel="stylesheet" type="text/css" />
     </head>
 <body>
+    
     <nav>
         <a href="index.php">Back</a>
     </nav>
     
     <h1>Random Plan</h1>
 <?php
-       include 'functions.php';
        generatePlan(inputToInteger($_POST["start"]), inputToInteger($_POST['max']));
        integerToStation(3500);
 ?>
