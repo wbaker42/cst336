@@ -1,0 +1,138 @@
+body {
+	background-color:#EDF1F4;
+	color:black;
+}
+h1{
+    margin: auto;
+    color: #EDF1F4;
+    background-color: #00A7E1;
+    padding:10px;
+    width: 70%;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 3em;
+}
+
+input[type=submit] {
+    width: 92%;
+    background-color: #3F88C5;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 4px;
+    margin-left: 4%;
+}
+
+input[type=submit]:hover {
+    background-color: #3778AD;
+}
+
+#inputForm{
+    width:75%;
+    margin:auto;
+    background-color:#8D99AE;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 5px;
+    font-size: 1.8em;
+}
+
+h3{
+    margin: auto;
+    color: #EDF1F4;
+    background-color: #00A7E1;
+    padding:10px;
+    width: 10%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.text{
+    background-color: #C4CAD0;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1.2em;
+}
+
+#category{
+    background-color: white;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    width: 40%;
+    margin-left: 7%;
+}
+.inputType{
+    background-color: white;
+    width:80%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+#priceHi, #priceLo{
+    width: 20%;
+}
+#product{
+    width: 50%;
+}
+.itemResult{
+    background-color: white;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 1.4em;
+    width:80%;
+    margin: auto;
+}
+#searchResults{
+    background-color: #C4CAD0;
+    width: 75%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;   
+}
+.productPrice, .productName{
+    font-weight: bold;
+}
+.productPrice{
+    color: #8D99AE;
+}
+.productDescription{
+    font-size: 0.8em;
+}
+
+.historyButton{
+    width: 5%;
+    background-color: #00A7E1;
+    font-size: 0.8em;
+    text-align: center;
+    border-radius: 4px
+}
+
+.historyButton a{
+    text-decoration: none;
+    color: black;
+}
+
+.historyButton:hover {
+	color:black;
+	transition: .4s;
+	background: #3F88C5;	
+}
+#historyResult{
+    background-color: white;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 1.4em;
+    width:30%;
+    margin: auto;
+}
+#productImage{
+    display: block;
+    margin: auto;
+    text-align: center;
+}

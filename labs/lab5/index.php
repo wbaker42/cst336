@@ -22,14 +22,16 @@ function displaySearchResults(){
     global $conn;
     
     if (isset($_GET['searchForm'])){
-        echo "<h3>Products Found: </h3>";
+        echo "<h3>Products Found: </h3><br>";
         //Query below prevents SQL Injection
         $namedParameters = array();
         
         $sql = "SELECT * FROM om_product Where 1";
         if(!empty($_GET['product'])){
-                $sql .= " AND productName LIKE :productName";
+                $sql .= " AND (productName LIKE :productName OR productDescription LIKE :productName)";
                 $namedParameters[":productName"] = "%" . $_GET['product'] . "%";
+                //$sql .= " OR productDescription LIKE :productName)";
+                
 
         }
         
@@ -59,11 +61,12 @@ function displaySearchResults(){
         $stmt = $conn->prepare($sql);
         $stmt->execute($namedParameters);
         $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        
+        echo"<div id='searchResults'>";
         foreach($records as $record) {
-            echo "<a href=\"purchaseHistory.php?productId=".$record["productId"]. "\"> History </a>";
-            echo $record["productName"] . " ". $record["productDescription"] . " $" . $record["price"] . "<br /><br />";
+            echo "<div class='itemResult'>" . "<span class='historyButton'><a href=\"purchaseHistory.php?productId=".$record["productId"]. "\"> History </a></span>";
+            echo "<span class='productName'>". $record["productName"] . "</span> <span class='productPrice'>$" . $record["price"] . "</span><br> <span class='productDescription'>". $record["productDescription"] . "</span></div><br /><br />";
         }
+        echo"</div>";
     }
 }
 }
@@ -75,27 +78,30 @@ function displaySearchResults(){
         <link href="css/styles.css" rel="stylesheet" type='text/css'/>
     </head>
     <body>
-        <div>
-            <h1> OtterMart Product Search </h1>
         
+            <h1> OtterMart Product Search </h1>
+            <br>
+        <div id='inputForm'>
         <form>
-            Product: <input type="text" name="product" />
-            <br>
-            Category:
-                <select name='category'>
-                    <option value="">Select One</option>
-                    <?=displayCategories()?>
-                </select>
-            <br>
-            Price: From <input ty="text" name="priceFrom" size="7" />
-                   To   <input type="text" name="priceTo" size="7"/>
+            
+            <div class ='inputType'> Product: <input type="text" name="product" class='text' id='product'/></div>
             <br>
             
-            Order result by:
+            <div class ='inputType'>Category:
+                <select name='category' id='category'>
+                    <option value="">Select One</option>
+                    <?=displayCategories()?>
+                </select></div>
+            <br>
+            <div class ='inputType'>Price: From <input type="text" name="priceFrom" size="7" class='text' id='priceLo'/>
+                   To   <input type="text" name="priceTo" size="7" class='text' id='priceHi'/></div>
+            <br>
+            
+            <div class ='inputType'>Order result by:
             <br>
             
             <input type="radio" name="orderBy" value="price"/> Price <br>
-            <input type="radio" name="orderBy" value="name"/> Name
+            <input type="radio" name="orderBy" value="name"/> Name</div>
             
             <br /><br />
             
