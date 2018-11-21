@@ -149,3 +149,8 @@ nav:hover {
     color: red;
     font-weight: bold;
 }
+ul{
+    background-color: white;
+    width: 50%;
+    border-radius: 5px;
+}

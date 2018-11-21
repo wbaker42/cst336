@@ -123,3 +123,44 @@
 [14-Nov-2018 01:29:57 UTC] PHP   2. displaySearchResults() /home/ubuntu/workspace/cst336/labs/lab5/index.php:86
 [14-Nov-2018 02:25:38 UTC] PHP Parse error:  syntax error, unexpected '"', expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/ubuntu/workspace/cst336/labs/lab5/index.php on line 65
 [14-Nov-2018 02:37:17 UTC] PHP Parse error:  syntax error, unexpected '$records' (T_VARIABLE), expecting '(' in /home/ubuntu/workspace/cst336/labs/lab5/purchaseHistory.php on line 18
+[18-Nov-2018 03:15:41 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '== 'Albert Einstein'' at line 1' in /home/ubuntu/workspace/cst336/labs/lab5/index.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab5/index.php(13): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/labs/lab5/index.php(83): displayEinsteinQuotes()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab5/index.php on line 13
+[19-Nov-2018 06:36:12 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/cst336/labs/lab5/admin.php on line 57
+[19-Nov-2018 06:36:54 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/cst336/labs/lab5/admin.php on line 7
+[19-Nov-2018 06:36:54 UTC] PHP Stack trace:
+[19-Nov-2018 06:36:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/admin.php:0
+[20-Nov-2018 05:56:51 UTC] PHP Fatal error:  Call to undefined function getCategories() in /home/ubuntu/workspace/cst336/labs/lab5/addProduct.php on line 38
+[20-Nov-2018 05:56:51 UTC] PHP Stack trace:
+[20-Nov-2018 05:56:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/addProduct.php:0
+[20-Nov-2018 05:57:05 UTC] PHP Parse error:  syntax error, unexpected '$statement' (T_VARIABLE) in /home/ubuntu/workspace/cst336/labs/lab5/addProduct.php on line 15
+[20-Nov-2018 06:11:54 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'productImage' cannot be null' in /home/ubuntu/workspace/cst336/labs/lab5/addProduct.php:41
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab5/addProduct.php(41): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab5/addProduct.php on line 41
+[20-Nov-2018 06:12:16 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'productImage' cannot be null' in /home/ubuntu/workspace/cst336/labs/lab5/addProduct.php:41
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab5/addProduct.php(41): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab5/addProduct.php on line 41
+[20-Nov-2018 06:12:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'productImage' cannot be null' in /home/ubuntu/workspace/cst336/labs/lab5/addProduct.php:41
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab5/addProduct.php(41): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab5/addProduct.php on line 41
+[20-Nov-2018 06:12:49 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'productImage' cannot be null' in /home/ubuntu/workspace/cst336/labs/lab5/addProduct.php:41
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab5/addProduct.php(41): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab5/addProduct.php on line 41
+[20-Nov-2018 06:40:04 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab5/updateProduct.php on line 29
+[20-Nov-2018 06:40:04 UTC] PHP Stack trace:
+[20-Nov-2018 06:40:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/updateProduct.php:0
+[20-Nov-2018 06:40:04 UTC] PHP   2. getProductInfo() /home/ubuntu/workspace/cst336/labs/lab5/updateProduct.php:60
+[21-Nov-2018 00:36:53 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab5/deleteProduct.php on line 11
+[21-Nov-2018 00:36:53 UTC] PHP Stack trace:
+[21-Nov-2018 00:36:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/deleteProduct.php:0

@@ -1,9 +1,6 @@
 <?php
-
 include 'dbConnection.php';
-
 $conn = getDatabaseConnection("ottermart");
-
 function displayCategories(){
     global $conn;
     
@@ -32,7 +29,6 @@ function displaySearchResults(){
                 $namedParameters[":productName"] = "%" . $_GET['product'] . "%";
                 //$sql .= " OR productDescription LIKE :productName)";
                 
-
         }
         
         if(!empty($_GET['category'])){
@@ -75,6 +71,7 @@ function displaySearchResults(){
 <html>
     <head>
         <title> OtterMart Product Search </title>
+        <link href= "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet" type='text/css'/>
     </head>
     <body>
