@@ -50,6 +50,8 @@ function updateBoard(){
 function createHintButton(){
     $("#hint").append("<button class='btn btn-info' id='hintButton'>Hint!</button>");
     $("#hint").append("<span class='hint'>Hint: " + selectedHint + "</span>");
+    $("#hintButton").show();
+    $(".hint").hide();
 }
 
 //Creates the letters inside the letters div
@@ -125,12 +127,14 @@ function updateMan(){
 //Ends the game by hiding game divs and displaying the win or loss divs
 function endGame(win){
     $("#letters").hide();
-    
+    $(".hint").hide();
+    $("#hintButton").hide();
     if (win) {
         $('#won').show();
     }else{
         $('#lost').show();
     }
+    
 }
 
 function disableButton(btn){
