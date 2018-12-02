@@ -70,7 +70,7 @@
                 }
                 return $count;
             }
-            /*********************************************************/
+            
             function formatUnansweredQuestion($num){
                 echo"<style>";
                 if($_POST['name'] == ''){
@@ -94,7 +94,7 @@
                 }    
                 echo"</style>";
             }
-            /*****************************************************************************/
+            
             function scoreQuiz($num){
                 $score = 0;
                 global $correctAnswers;
@@ -108,7 +108,7 @@
                         array_push($incorrectAnswers, $i);
                     }
                 }
-                echo"<h2>" . $_POST['name'] . " You Scored <span id ='score'>$score</span>/5</h2>";
+                echo"<h2>" . $_POST['name'] . " You Scored <span id ='score'>$score</span>/5.</h2>";
                 if($score<5){
                     echo"<h2>Think More About Questions $incorrectAnswers[0]";
                 }
