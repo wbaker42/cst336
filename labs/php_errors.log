@@ -164,3 +164,13 @@ Stack trace:
 [21-Nov-2018 00:36:53 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab5/deleteProduct.php on line 11
 [21-Nov-2018 00:36:53 UTC] PHP Stack trace:
 [21-Nov-2018 00:36:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/deleteProduct.php:0
+[04-Dec-2018 21:33:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'score' cannot be null' in /home/ubuntu/workspace/cst336/labs/lab7/submitScores.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/submitScores.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/submitScores.php on line 16
+[04-Dec-2018 21:50:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'score' cannot be null' in /home/ubuntu/workspace/cst336/labs/lab7/submitScores.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/submitScores.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/submitScores.php on line 16
