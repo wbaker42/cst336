@@ -1,3 +1,4 @@
+document.getElementById("image").src="../template/save.png";
 $(document).ready(function(){
     
     $("#logoutBtn").click( function() {
@@ -101,4 +102,4 @@ $(document).ready(function(){
         questionFeedback.removeClass("correct");
     }
     
-}); //documentReady       
+}); //documentReady     

@@ -1,0 +1,142 @@
+[07-Dec-2018 22:07:39 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/practiceFinal/index.php on line 14
+[07-Dec-2018 22:07:39 UTC] PHP Stack trace:
+[07-Dec-2018 22:07:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practiceFinal/index.php:0
+[07-Dec-2018 22:08:51 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'practice.tbl' doesn't exist' in /home/ubuntu/workspace/cst336/practiceFinal/index.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practiceFinal/index.php(15): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practiceFinal/index.php on line 15
+[07-Dec-2018 22:20:06 UTC] PHP Fatal error:  Cannot redeclare getDBConnection() (previously declared in /home/ubuntu/workspace/cst336/practiceFinal/connect.php:3) in /home/ubuntu/workspace/cst336/practiceFinal/connect.php on line 3
+[07-Dec-2018 22:20:07 UTC] PHP Stack trace:
+[07-Dec-2018 22:20:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practiceFinal/index.php:0
+[07-Dec-2018 23:13:33 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/cst336/practiceFinal/index.php on line 62
+[07-Dec-2018 23:15:16 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/cst336/practiceFinal/index.php on line 62
+[07-Dec-2018 23:28:18 UTC] PHP Fatal error:  Call to undefined function setVariables() in /home/ubuntu/workspace/cst336/practiceFinal/index.php on line 49
+[07-Dec-2018 23:28:18 UTC] PHP Stack trace:
+[07-Dec-2018 23:28:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practiceFinal/index.php:0
+[07-Dec-2018 23:28:20 UTC] PHP Fatal error:  Call to undefined function setVariables() in /home/ubuntu/workspace/cst336/practiceFinal/index.php on line 49
+[07-Dec-2018 23:28:20 UTC] PHP Stack trace:
+[07-Dec-2018 23:28:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practiceFinal/index.php:0
+[07-Dec-2018 23:28:53 UTC] PHP Fatal error:  Call to undefined function setVariables() in /home/ubuntu/workspace/cst336/practiceFinal/index.php on line 49
+[07-Dec-2018 23:28:53 UTC] PHP Stack trace:
+[07-Dec-2018 23:28:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practiceFinal/index.php:0
+[08-Dec-2018 02:11:49 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'correct' cannot be null' in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php(22): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php on line 22
+[08-Dec-2018 02:18:42 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php:31
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php(31): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php on line 31
+[08-Dec-2018 02:19:26 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php:31
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php(31): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php on line 31
+[08-Dec-2018 02:20:59 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php:31
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php(31): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php on line 31
+[08-Dec-2018 02:22:25 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php:31
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php(31): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php on line 31
+[08-Dec-2018 02:25:46 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php:31
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php(31): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php on line 31
+[08-Dec-2018 02:30:52 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php:31
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php(31): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php on line 31
+[08-Dec-2018 02:36:25 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php:31
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php(31): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php on line 31
+[08-Dec-2018 02:38:42 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php:31
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php(31): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php on line 31
+[08-Dec-2018 02:38:51 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php:31
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php(31): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php on line 31
+[08-Dec-2018 02:40:15 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php:31
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php(31): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php on line 31
+[08-Dec-2018 02:42:00 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php:31
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php(31): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php on line 31
+[08-Dec-2018 02:47:34 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php:31
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php(31): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php on line 31
+[08-Dec-2018 02:51:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php:31
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php(31): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php on line 31
+[08-Dec-2018 02:51:33 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php:31
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php(31): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php on line 31
+[08-Dec-2018 02:53:38 UTC] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, string given in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php on line 31
+[08-Dec-2018 02:53:38 UTC] PHP Stack trace:
+[08-Dec-2018 02:53:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php:0
+[08-Dec-2018 02:53:38 UTC] PHP   2. PDOStatement->execute() /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php:31
+[08-Dec-2018 02:57:52 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php:36
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php(36): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php on line 36
+[08-Dec-2018 02:58:24 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php:36
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php(36): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php on line 36
+[08-Dec-2018 02:58:45 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php:36
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php(36): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php on line 36
+[08-Dec-2018 02:59:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php:36
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php(36): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php on line 36
+[08-Dec-2018 03:00:20 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php:36
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php(36): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php on line 36
+[08-Dec-2018 03:00:42 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php:36
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php(36): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php on line 36
+[08-Dec-2018 03:00:52 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php:36
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php(36): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practiceFinal/submitScores.php on line 36
+[08-Dec-2018 07:06:52 UTC] PHP Fatal error:  Cannot redeclare getDBConnection() (previously declared in /home/ubuntu/workspace/cst336/practiceFinal2/connect.php:3) in /home/ubuntu/workspace/cst336/practiceFinal2/connect.php on line 3
+[08-Dec-2018 07:06:52 UTC] PHP Stack trace:
+[08-Dec-2018 07:06:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practiceFinal2/index.php:0
+[08-Dec-2018 07:07:10 UTC] PHP Fatal error:  Cannot redeclare getDBConnection() (previously declared in /home/ubuntu/workspace/cst336/practiceFinal2/connect.php:3) in /home/ubuntu/workspace/cst336/practiceFinal2/connect.php on line 3
+[08-Dec-2018 07:07:10 UTC] PHP Stack trace:
+[08-Dec-2018 07:07:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practiceFinal2/index.php:0
