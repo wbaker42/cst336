@@ -123,3 +123,21 @@ Stack trace:
 #0 /home/ubuntu/workspace/finalProject/api/addClass.php(17): PDO->query('INSERT INTO cla...')
 #1 {main}
   thrown in /home/ubuntu/workspace/finalProject/api/addClass.php on line 17
+[11-Dec-2018 05:25:00 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':course_id, :room_number, :days_of_week, :time, :semester, :start_date);
+       ' at line 3' in /home/ubuntu/workspace/finalProject/api/addClass.php:17
+Stack trace:
+#0 /home/ubuntu/workspace/finalProject/api/addClass.php(17): PDO->query('INSERT INTO cla...')
+#1 {main}
+  thrown in /home/ubuntu/workspace/finalProject/api/addClass.php on line 17
+[11-Dec-2018 05:33:06 UTC] PHP Warning:  mysql_insert_id(): Access denied for user ''@'localhost' (using password: NO) in /home/ubuntu/workspace/finalProject/api/addClass.php on line 19
+[11-Dec-2018 05:33:06 UTC] PHP Stack trace:
+[11-Dec-2018 05:33:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/finalProject/api/addClass.php:0
+[11-Dec-2018 05:33:06 UTC] PHP   2. mysql_insert_id() /home/ubuntu/workspace/finalProject/api/addClass.php:19
+[11-Dec-2018 05:33:06 UTC] PHP Warning:  mysql_insert_id(): A link to the server could not be established in /home/ubuntu/workspace/finalProject/api/addClass.php on line 19
+[11-Dec-2018 05:33:06 UTC] PHP Stack trace:
+[11-Dec-2018 05:33:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/finalProject/api/addClass.php:0
+[11-Dec-2018 05:33:06 UTC] PHP   2. mysql_insert_id() /home/ubuntu/workspace/finalProject/api/addClass.php:19
+[11-Dec-2018 05:38:23 UTC] PHP Warning:  mysqli_insert_id() expects parameter 1 to be mysqli, object given in /home/ubuntu/workspace/finalProject/api/addClass.php on line 20
+[11-Dec-2018 05:38:23 UTC] PHP Stack trace:
+[11-Dec-2018 05:38:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/finalProject/api/addClass.php:0
+[11-Dec-2018 05:38:23 UTC] PHP   2. mysqli_insert_id() /home/ubuntu/workspace/finalProject/api/addClass.php:20

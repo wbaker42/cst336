@@ -140,3 +140,9 @@ Stack trace:
 [08-Dec-2018 07:07:10 UTC] PHP Fatal error:  Cannot redeclare getDBConnection() (previously declared in /home/ubuntu/workspace/cst336/practiceFinal2/connect.php:3) in /home/ubuntu/workspace/cst336/practiceFinal2/connect.php on line 3
 [08-Dec-2018 07:07:10 UTC] PHP Stack trace:
 [08-Dec-2018 07:07:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practiceFinal2/index.php:0
+[11-Dec-2018 06:18:14 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'final_project'' in /home/ubuntu/workspace/cst336/finalProject/dbconnection.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/dbconnection.php(15): PDO->__construct('mysql:host=loca...', 'wibaker', '')
+#1 /home/ubuntu/workspace/cst336/finalProject/loginProcess.php(5): getDatabaseConnection()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/dbconnection.php on line 15

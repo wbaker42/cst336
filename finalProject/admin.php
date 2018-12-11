@@ -17,8 +17,7 @@
         $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
         //$keys = array_keys($records[0]);
         $keys = ["class_id","course_id","room_number","time","days_of_week","start_date","semester"];
-        echo "<table id='adminClassDisplay' class='table'>";
-        echo "<thead class='thead-light'>";
+        echo "<table id='adminClassDisplay' class='table table-striped'>";
         echo "<tr style='font-weight: bold;'>";
         foreach ($keys as $key){
             echo "<td>".$key."</td>";
@@ -27,8 +26,6 @@
             echo "<td>edit</td>";
             echo "<td>delete</td>";
         echo "</tr>";
-        echo "</thead>";
-        echo "<tbody class=\"csumbStripes\">";
         foreach ($records as $record){
             echo "<tr>";
             foreach($keys as $key){
@@ -44,7 +41,6 @@
                 echo "</form>";
             echo "</tr>";
         }
-        echo "</tbody>";
         echo "</table>";
     }
     
@@ -346,22 +342,29 @@
                             console.log(data);
                             if (data['type'] == "add"){
                                 console.log("Update type: add");
+                                console.log(data['addedId']);
                                 //Add new row here, without querying the database.
                                 alert("Class added, refresh page to view.");
-                                //$("#adminClassDisplay").prepend("<tr></tr>");
-                                //var row = $("#adminClassDisplay tr:first");
-                                //row = row.next();
-                                //row.after("<tr></tr>");
-                                //console.log(row);
-                                //for (var i = 0; i < 10; i++){
-                                //    row.append("<td></td>");
-                                //}
-                                //var cols = row.children();
+                                /*
+                                var row = $("#adminClassDisplay tr:first");
+                                row = row.next();
+                                row.after("<tr></tr>");
+                                console.log(row);
+                                for (var i = 0; i < 10; i++){
+                                    row.append("<td></td>");
+                                }
+                                var cols = row.children();
                                 //console.log(cols);
                                 //console.log(data);
-                                //cols[0].innerHTML = data['addedId'];
-                                //flickerRow(row);
-                                
+                                console.log("Update type: add");
+                                cols[0].innerHTML = data['addedId'];
+                                flickerRow(row);
+                                cols[8].innerHTML = "<a id='classId"+data['addedId']+"'class='editbtn btn btn-primary' >Edit</a>";
+                                cols[9].innerHTML = "<form action='deleteClass.php' onsubmit='return confirmDelete()'>"+
+                                "<input type='hidden' name='classId' value='"+data['addedId']+"' />"+
+                                "<td> <input type='submit' class='btn btn-danger' value='Remove'></td>"+
+                                "</form>";
+                                */
                             }
                             else{
                                 console.log("Update type: update");
@@ -377,18 +380,6 @@
                             cols[6].innerHTML = data[':semester'];
                             cols[7].innerHTML = "<input class='btn' type='button' value='"+data[':course_name']+"'>";
                             
-                            /*
-                            echo "<td><input class='btn' type='button' value='".$record['course_name']."'></td>";
-                            echo "<td><a id='classId".$record['class_id']."'class='editbtn btn btn-primary' >Edit</a></td>";
-                            
-                            echo "<form action='deleteClass.php' onsubmit='return confirmDelete()'>";
-                                echo "<input type='hidden' name='classId' value='".$record['class_Id']."' />";
-                                echo "<td> <input type='submit' class='btn btn-danger' value='Remove'></td>";
-                            echo "</form>";
-                            */
-                            
-                            
-
                             
                         },
                         complete: function(data,status){

@@ -50,7 +50,6 @@
         $stmt = $connect->prepare($sql);
         $stmt->execute();
         $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        echo "<table class=\"table table-striped\">";
         foreach($records as $record){
             echo "<tr><td>". $record['course_name']."</td><td>".$record['semester']."</td><td>".$record['days_of_week']."</td><td>".$record['time'].
             "</td><td>".$record['start_date']."</td><td>".$record['room_number']."</td><td>".$record['number_of_units']."</td>";
@@ -72,7 +71,6 @@
             }
             echo"</form>";
         }
-        echo "</table>";
     }
 ?>
 <!DOCTYPE html>
@@ -122,65 +120,57 @@
         <div class="bottombar">
             <h1>Search and Register for Classes</h1>
         </div>
-        <form id='searchForm'>
-            <strong class='searchCategory'>Search by Semester:</strong>
+        <form>
+            <strong>Search by Semester:</strong>
             <br>
-            <div class='searchOptionsList'>
-                 <input type="radio" name="semester" id="Spring" value="Spring"
-                <?php $semester=$_GET['semester'];if (isset($semester) && $semester=="Spring") echo "checked";?>>Spring</input><br>
-                
-                <input type="radio" name="semester" id="Summer" value="Summer"
-                <?php $semester=$_GET['font'];if (isset($summer) && $semester=="Summer") echo "checked";?>>Summer</input><br>
-                
-                <input type="radio" name="semester" id="Winter" value="Winter"
-                <?php $semester=$_GET['semester'];if (isset($semester) && $semester=="Winter") echo "checked";?>>Winter</input><br>
-           </div>
+             <input type="radio" name="semester" id="Spring" value="Spring"
+            <?php $semester=$_GET['semester'];if (isset($semester) && $semester=="Spring") echo "checked";?>>Spring</input><br>
             
-            <hr>
+            <input type="radio" name="semester" id="Summer" value="Summer"
+            <?php $semester=$_GET['font'];if (isset($summer) && $semester=="Summer") echo "checked";?>>Summer</input><br>
             
-            <strong class='searchCategory'>Search by time of day:</strong>
-            <br>
-            <div class='searchOptionsList'>
-                 <input type="radio" name="time" id="morning" value="morning"
-                <?php $time=$_GET['time'];if (isset($time) && $time=="morning") echo "checked";?>>Morning</input><br>
-                
-                
-                <input type="radio" name="time" id="afternoon" value="afternoon"
-                <?php $time=$_GET['time'];if (isset($time) && $time=="afternoon") echo "checked";?>>Afternoon</input><br>
-            </div>
-            <hr>
-            
-            <strong class='searchCategory'>Search by days of week:</strong>
-            <br>
-            <div class='searchOptionsList'>
-                <input type="radio" name="days" id="days" value="M"
-                <?php $days=$_GET['days'];if (isset($days) && $days=="M") echo "checked";?>>Monday</input><br>
-                
-                 <input type="radio" name="days" id="days" value="T"
-                <?php $days=$_GET['days'];if (isset($days) && $days=="T") echo "checked";?>>Tuesday</input><br>
-                
-                <input type="radio" name="days" id="days" value="W"
-                <?php $days=$_GET['days'];if (isset($days) && $days=="W") echo "checked";?>>Wednesday</input><br>
-                
-                <input type="radio" name="days" id="days" value="W"
-                <?php $days=$_GET['days'];if (isset($days) && $days=="Th") echo "checked";?>>Thursday</input><br>
-                
-                 <input type="radio" name="days" id="days" value="MW"
-                <?php $days=$_GET['days'];if (isset($days) && $days=="MW") echo "checked";?>>Monday/Wednesday</input><br>
-            
-            
-                <input type="radio" name="days" id="days" value="MTWTH"
-                <?php $days=$_GET['days'];if (isset($days) && $days=="MTWTH") echo "checked";?>>Mon/Tue/Wed/Thurs</input><br>
-            
+            <input type="radio" name="semester" id="Winter" value="Winter"
+            <?php $semester=$_GET['semester'];if (isset($semester) && $semester=="Winter") echo "checked";?>>Winter</input>
            
             <br>
-            <button type="submit" id='courseSearchBtn' class="btn btn-primary btn-lg">Search</button>
-        </form>
-        
-        </div>
+            <hr>
+            
+            <strong>Search by time of day:</strong>
+            <br>
+             <input type="radio" name="time" id="morning" value="morning"
+            <?php $time=$_GET['time'];if (isset($time) && $time=="morning") echo "checked";?>>Morning</input><br>
+            
+            
+            <input type="radio" name="time" id="afternoon" value="afternoon"
+            <?php $time=$_GET['time'];if (isset($time) && $time=="afternoon") echo "checked";?>>Afternoon</input><br>
+            <hr>
+            
+            <strong>Search by days of week:</strong>
+            <br>
+            <input type="radio" name="days" id="days" value="M"
+            <?php $days=$_GET['days'];if (isset($days) && $days=="M") echo "checked";?>>Monday</input><br>
+            
+             <input type="radio" name="days" id="days" value="T"
+            <?php $days=$_GET['days'];if (isset($days) && $days=="T") echo "checked";?>>Tuesday</input><br>
+            
+            <input type="radio" name="days" id="days" value="W"
+            <?php $days=$_GET['days'];if (isset($days) && $days=="W") echo "checked";?>>Wednesday</input><br>
+            
+            <input type="radio" name="days" id="days" value="W"
+            <?php $days=$_GET['days'];if (isset($days) && $days=="Th") echo "checked";?>>Thursday</input><br>
+            
+             <input type="radio" name="days" id="days" value="MW"
+            <?php $days=$_GET['days'];if (isset($days) && $days=="MW") echo "checked";?>>Monday/Wednesday</input><br>
+            
+            
+             <input type="radio" name="days" id="days" value="MTWTH"
+            <?php $days=$_GET['days'];if (isset($days) && $days=="MTWTH") echo "checked";?>>Mon/Tue/Wed/Thurs</input><br>
             <hr>
             <br>
-        
+            
+            <!--<input id="serach" type="submit" value="Submit"/>-->
+            <button type="submit" class="btn btn-primary btn btn-lg">Submit</button>
+        </form>
         <br>
         <?php
         include 'functions.php';
